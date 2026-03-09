@@ -37,34 +37,70 @@ function changeFontSize(size) {
     text.style.fontSize = size + "px";
 }
 
-changeFontSize(fontSize);
+// changeFontSize(fontSize);
 
 // 4 task
 
-function widthTable(table) {
-    table.style.display = 'block';
-    table.style.width = 200 + "px";
-}
+// function widthTable(table) {
+//     table.style.display = 'block';
+//     table.style.width = 200 + "px";
+// }
 
-widthTable(cxriliNode);
+// widthTable(cxriliNode);
 
 // 5 task
 
-function heightTable(table) {
-    table.style.display = 'block';
-    table.style.height = 200 + "px";
-}
+// function heightTable(table) {
+//     table.style.display = 'block';
+//     table.style.height = 200 + "px";
+// }
 
-heightTable(cxriliNode);
+// heightTable(cxriliNode);
 
 // 6 task
 
 let tableSize = prompt("Enter table size");
 
-function changeTableSize(size) {
-    cxriliNode.style.display = 'block';
-    cxriliNode.style.width = size + "px";
-    cxriliNode.style.height = size + "px";
+// function changeTableSize(size) {
+//     cxriliNode.style.display = 'block';
+//     cxriliNode.style.width = size + "px";
+//     cxriliNode.style.height = size + "px";
+// }
+
+// changeTableSize(tableSize);
+
+// 7 task
+
+let tableColor = prompt("Enter table color");
+
+function changeTableColor(tableclr) {
+    cxriliNode.style.backgroundColor = tableclr;
 }
 
-changeTableSize(tableSize);
+// changeTableColor(tableColor);
+
+// 8 task
+
+let tableBorderSize = prompt("Enter table border size");
+
+function changeTableBorderSize(borderSize) {
+    cxriliNode.style.borderStyle = "solid";
+    cxriliNode.style.borderWidth = borderSize + "px";
+}
+
+// changeTableBorderSize(tableBorderSize);
+
+// 9 task
+
+let widthTable = prompt("Enter table width");
+let heightTable = prompt("Enter table height");
+
+function changeEverything(height, width, color, borderSize) {
+    cxriliNode.style.height = height + "px";
+    cxriliNode.style.width = width + "px";
+    cxriliNode.style.backgroundColor = color;
+    cxriliNode.style.borderStyle = "solid";
+    cxriliNode.style.borderWidth = borderSize + "px";
+}
+
+changeEverything(heightTable, widthTable, tableColor, tableBorderSize);
